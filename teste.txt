@@ -1,0 +1,439 @@
+*{ ===================================================================== }*
+*{ Transmissao em codigo MORSE via LEDR (A9 Private Timer Hardware)      }*
+*{ Nome transmitido: HIGOR AZEVEDO                                       }*
+*{ PONTO=300ms  TRACO=600ms  gap_letra=450ms  gap_palavra=900ms          }*
+*{ gap_entre_palavras=2000ms                                             }*
+*{                                                                       }*
+*{ CICLOS_MS = 200000 (Clock de 200MHz do ARM no DE1-SoC)                }*
+*{ TIMER_LOAD = 0xFFFEC600 | TIMER_CTRL = 0xFFFEC608                     }*
+*{ TIMER_STAT = 0xFFFEC60C                                               }*
+*{ ===================================================================== }*
+(START)
+( 0 LEDR MEM )
+( 200000 CICLOS_MS MEM )
+
+*{ simbolo: PONTO (300ms aceso) }*
+( 1 LEDR MEM )
+( ( 300 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+( 0 LEDR MEM )
+*{ gap apos o simbolo: 450ms apagado }*
+( ( 450 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+
+*{ simbolo: PONTO (300ms aceso) }*
+( 1 LEDR MEM )
+( ( 300 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+( 0 LEDR MEM )
+*{ gap apos o simbolo: 450ms apagado }*
+( ( 450 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+
+*{ simbolo: PONTO (300ms aceso) }*
+( 1 LEDR MEM )
+( ( 300 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+( 0 LEDR MEM )
+*{ gap apos o simbolo: 450ms apagado }*
+( ( 450 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+
+*{ simbolo: PONTO (300ms aceso) }*
+( 1 LEDR MEM )
+( ( 300 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+( 0 LEDR MEM )
+*{ gap apos o simbolo: 900ms apagado }*
+( ( 900 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+
+*{ simbolo: PONTO (300ms aceso) }*
+( 1 LEDR MEM )
+( ( 300 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+( 0 LEDR MEM )
+*{ gap apos o simbolo: 450ms apagado }*
+( ( 450 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+
+*{ simbolo: PONTO (300ms aceso) }*
+( 1 LEDR MEM )
+( ( 300 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+( 0 LEDR MEM )
+*{ gap apos o simbolo: 900ms apagado }*
+( ( 900 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+
+*{ simbolo: TRACO (600ms aceso) }*
+( 1 LEDR MEM )
+( ( 600 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+( 0 LEDR MEM )
+*{ gap apos o simbolo: 450ms apagado }*
+( ( 450 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+
+*{ simbolo: TRACO (600ms aceso) }*
+( 1 LEDR MEM )
+( ( 600 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+( 0 LEDR MEM )
+*{ gap apos o simbolo: 450ms apagado }*
+( ( 450 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+
+*{ simbolo: PONTO (300ms aceso) }*
+( 1 LEDR MEM )
+( ( 300 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+( 0 LEDR MEM )
+*{ gap apos o simbolo: 900ms apagado }*
+( ( 900 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+
+*{ simbolo: TRACO (600ms aceso) }*
+( 1 LEDR MEM )
+( ( 600 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+( 0 LEDR MEM )
+*{ gap apos o simbolo: 450ms apagado }*
+( ( 450 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+
+*{ simbolo: TRACO (600ms aceso) }*
+( 1 LEDR MEM )
+( ( 600 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+( 0 LEDR MEM )
+*{ gap apos o simbolo: 450ms apagado }*
+( ( 450 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+
+*{ simbolo: TRACO (600ms aceso) }*
+( 1 LEDR MEM )
+( ( 600 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+( 0 LEDR MEM )
+*{ gap apos o simbolo: 900ms apagado }*
+( ( 900 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+
+*{ simbolo: PONTO (300ms aceso) }*
+( 1 LEDR MEM )
+( ( 300 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+( 0 LEDR MEM )
+*{ gap apos o simbolo: 450ms apagado }*
+( ( 450 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+
+*{ simbolo: TRACO (600ms aceso) }*
+( 1 LEDR MEM )
+( ( 600 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+( 0 LEDR MEM )
+*{ gap apos o simbolo: 450ms apagado }*
+( ( 450 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+
+*{ simbolo: PONTO (300ms aceso) }*
+( 1 LEDR MEM )
+( ( 300 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+( 0 LEDR MEM )
+*{ gap apos o simbolo: 2000ms apagado }*
+( ( 2000 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+
+*{ simbolo: PONTO (300ms aceso) }*
+( 1 LEDR MEM )
+( ( 300 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+( 0 LEDR MEM )
+*{ gap apos o simbolo: 450ms apagado }*
+( ( 450 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+
+*{ simbolo: TRACO (600ms aceso) }*
+( 1 LEDR MEM )
+( ( 600 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+( 0 LEDR MEM )
+*{ gap apos o simbolo: 900ms apagado }*
+( ( 900 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+
+*{ simbolo: TRACO (600ms aceso) }*
+( 1 LEDR MEM )
+( ( 600 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+( 0 LEDR MEM )
+*{ gap apos o simbolo: 450ms apagado }*
+( ( 450 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+
+*{ simbolo: TRACO (600ms aceso) }*
+( 1 LEDR MEM )
+( ( 600 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+( 0 LEDR MEM )
+*{ gap apos o simbolo: 450ms apagado }*
+( ( 450 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+
+*{ simbolo: PONTO (300ms aceso) }*
+( 1 LEDR MEM )
+( ( 300 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+( 0 LEDR MEM )
+*{ gap apos o simbolo: 450ms apagado }*
+( ( 450 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+
+*{ simbolo: PONTO (300ms aceso) }*
+( 1 LEDR MEM )
+( ( 300 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+( 0 LEDR MEM )
+*{ gap apos o simbolo: 900ms apagado }*
+( ( 900 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+
+*{ simbolo: PONTO (300ms aceso) }*
+( 1 LEDR MEM )
+( ( 300 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+( 0 LEDR MEM )
+*{ gap apos o simbolo: 900ms apagado }*
+( ( 900 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+
+*{ simbolo: PONTO (300ms aceso) }*
+( 1 LEDR MEM )
+( ( 300 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+( 0 LEDR MEM )
+*{ gap apos o simbolo: 450ms apagado }*
+( ( 450 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+
+*{ simbolo: PONTO (300ms aceso) }*
+( 1 LEDR MEM )
+( ( 300 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+( 0 LEDR MEM )
+*{ gap apos o simbolo: 450ms apagado }*
+( ( 450 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+
+*{ simbolo: PONTO (300ms aceso) }*
+( 1 LEDR MEM )
+( ( 300 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+( 0 LEDR MEM )
+*{ gap apos o simbolo: 450ms apagado }*
+( ( 450 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+
+*{ simbolo: TRACO (600ms aceso) }*
+( 1 LEDR MEM )
+( ( 600 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+( 0 LEDR MEM )
+*{ gap apos o simbolo: 900ms apagado }*
+( ( 900 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+
+*{ simbolo: PONTO (300ms aceso) }*
+( 1 LEDR MEM )
+( ( 300 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+( 0 LEDR MEM )
+*{ gap apos o simbolo: 900ms apagado }*
+( ( 900 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+
+*{ simbolo: TRACO (600ms aceso) }*
+( 1 LEDR MEM )
+( ( 600 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+( 0 LEDR MEM )
+*{ gap apos o simbolo: 450ms apagado }*
+( ( 450 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+
+*{ simbolo: PONTO (300ms aceso) }*
+( 1 LEDR MEM )
+( ( 300 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+( 0 LEDR MEM )
+*{ gap apos o simbolo: 450ms apagado }*
+( ( 450 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+
+*{ simbolo: PONTO (300ms aceso) }*
+( 1 LEDR MEM )
+( ( 300 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+( 0 LEDR MEM )
+*{ gap apos o simbolo: 900ms apagado }*
+( ( 900 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+
+*{ simbolo: TRACO (600ms aceso) }*
+( 1 LEDR MEM )
+( ( 600 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+( 0 LEDR MEM )
+*{ gap apos o simbolo: 450ms apagado }*
+( ( 450 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+
+*{ simbolo: TRACO (600ms aceso) }*
+( 1 LEDR MEM )
+( ( 600 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+( 0 LEDR MEM )
+*{ gap apos o simbolo: 450ms apagado }*
+( ( 450 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+
+*{ simbolo: TRACO (600ms aceso) }*
+( 1 LEDR MEM )
+( ( 600 CICLOS_MS * ) TIMER_LOAD MEM )
+( 1 TIMER_CTRL MEM )
+( 1 TIMER_STAT > { ( 0 DUMMY MEM ) } WHILE )
+( 1 TIMER_STAT MEM )
+( 0 LEDR MEM )
+
+(END)

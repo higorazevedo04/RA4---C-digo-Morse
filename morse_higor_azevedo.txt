@@ -1,0 +1,133 @@
+*{ ===================================================================== }*
+*{ Transmissao em codigo MORSE via LEDR (CPUlator ARMv7 - DE1-SoC)         }*
+*{ Nome transmitido: HIGOR AZEVEDO                                         }*
+*{                                                                         }*
+*{ Tabela morse usada:                                                     }*
+*{   H = ....    I = ..     G = --.    O = ---    R = .-.                  }*
+*{   A = .-      Z = --..   E = .      V = ...-   D = -..    O = ---       }*
+*{                                                                         }*
+*{ UNIDADE_MS = quantas iteracoes do laco de espera valem 1 milissegundo.  }*
+*{ ===================================================================== }*
+(START)
+( 0 LEDR MEM )
+( 3000 UNIDADE_MS MEM )
+
+*{ ---- tabela de tempos (calculada uma unica vez) ---- }*
+( ( 300  UNIDADE_MS * ) T_PONTO MEM )  *{ duracao do PONTO: 300ms             }*
+( ( 600  UNIDADE_MS * ) T_TRACO MEM )  *{ duracao do TRACO: 600ms             }*
+( ( 450  UNIDADE_MS * ) T_GAPL  MEM )  *{ espaco DENTRO da letra: 450ms       }*
+( ( 900  UNIDADE_MS * ) T_GAPP  MEM )  *{ espaco ENTRE letras: 900ms          }*
+( ( 2000 UNIDADE_MS * ) T_GAPF  MEM )  *{ espaco ENTRE palavras: 2000ms       }*
+
+*{ =============================== H : .... =============================== }*
+( 1 LEDR MEM )( T_PONTO CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+( 0 LEDR MEM )( T_GAPL  CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+
+( 1 LEDR MEM )( T_PONTO CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+( 0 LEDR MEM )( T_GAPL  CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+
+( 1 LEDR MEM )( T_PONTO CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+( 0 LEDR MEM )( T_GAPL  CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+
+( 1 LEDR MEM )( T_PONTO CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+( 0 LEDR MEM )( T_GAPP  CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+
+*{ =============================== I : .. =============================== }*
+( 1 LEDR MEM )( T_PONTO CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+( 0 LEDR MEM )( T_GAPL  CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+
+( 1 LEDR MEM )( T_PONTO CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+( 0 LEDR MEM )( T_GAPP  CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+
+*{ =============================== G : --. =============================== }*
+( 1 LEDR MEM )( T_TRACO CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+( 0 LEDR MEM )( T_GAPL  CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+
+( 1 LEDR MEM )( T_TRACO CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+( 0 LEDR MEM )( T_GAPL  CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+
+( 1 LEDR MEM )( T_PONTO CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+( 0 LEDR MEM )( T_GAPP  CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+
+*{ =============================== O : --- =============================== }*
+( 1 LEDR MEM )( T_TRACO CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+( 0 LEDR MEM )( T_GAPL  CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+
+( 1 LEDR MEM )( T_TRACO CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+( 0 LEDR MEM )( T_GAPL  CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+
+( 1 LEDR MEM )( T_TRACO CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+( 0 LEDR MEM )( T_GAPP  CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+
+*{ =============================== R : .-. =============================== }*
+( 1 LEDR MEM )( T_PONTO CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+( 0 LEDR MEM )( T_GAPL  CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+
+( 1 LEDR MEM )( T_TRACO CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+( 0 LEDR MEM )( T_GAPL  CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+
+( 1 LEDR MEM )( T_PONTO CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+( 0 LEDR MEM )( T_GAPF  CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+
+*{ =============================== A : .- =============================== }*
+( 1 LEDR MEM )( T_PONTO CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+( 0 LEDR MEM )( T_GAPL  CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+
+( 1 LEDR MEM )( T_TRACO CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+( 0 LEDR MEM )( T_GAPP  CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+
+*{ =============================== Z : --.. =============================== }*
+( 1 LEDR MEM )( T_TRACO CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+( 0 LEDR MEM )( T_GAPL  CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+
+( 1 LEDR MEM )( T_TRACO CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+( 0 LEDR MEM )( T_GAPL  CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+
+( 1 LEDR MEM )( T_PONTO CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+( 0 LEDR MEM )( T_GAPL  CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+
+( 1 LEDR MEM )( T_PONTO CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+( 0 LEDR MEM )( T_GAPP  CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+
+*{ =============================== E : . =============================== }*
+( 1 LEDR MEM )( T_PONTO CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+( 0 LEDR MEM )( T_GAPP  CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+
+*{ =============================== V : ...- =============================== }*
+( 1 LEDR MEM )( T_PONTO CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+( 0 LEDR MEM )( T_GAPL  CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+
+( 1 LEDR MEM )( T_PONTO CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+( 0 LEDR MEM )( T_GAPL  CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+
+( 1 LEDR MEM )( T_PONTO CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+( 0 LEDR MEM )( T_GAPL  CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+
+( 1 LEDR MEM )( T_TRACO CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+( 0 LEDR MEM )( T_GAPP  CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+
+*{ =============================== E : . =============================== }*
+( 1 LEDR MEM )( T_PONTO CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+( 0 LEDR MEM )( T_GAPP  CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+
+*{ =============================== D : -.. =============================== }*
+( 1 LEDR MEM )( T_TRACO CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+( 0 LEDR MEM )( T_GAPL  CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+
+( 1 LEDR MEM )( T_PONTO CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+( 0 LEDR MEM )( T_GAPL  CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+
+( 1 LEDR MEM )( T_PONTO CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+( 0 LEDR MEM )( T_GAPP  CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+
+*{ =============================== O : --- (ultima letra) =============== }*
+( 1 LEDR MEM )( T_TRACO CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+( 0 LEDR MEM )( T_GAPL  CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+
+( 1 LEDR MEM )( T_TRACO CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+( 0 LEDR MEM )( T_GAPL  CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+
+( 1 LEDR MEM )( T_TRACO CNT MEM )( CNT 0 > { ( ( CNT 1 - ) CNT MEM ) } WHILE )
+( 0 LEDR MEM )
+
+(END)

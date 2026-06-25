@@ -1,0 +1,5981 @@
+{
+    "tipo": "programa_ast",
+    "instrucoes": [
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 12
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 0,
+                "tipo_dado": "int",
+                "linha": 12
+            },
+            "linha": 12
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "UNIDADE_MS",
+                "tipo_dado": null,
+                "linha": 13
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 3000,
+                "tipo_dado": "int",
+                "linha": 13
+            },
+            "linha": 13
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "T_PONTO",
+                "tipo_dado": null,
+                "linha": 16
+            },
+            "val_expr": {
+                "tipo": "operacao",
+                "operador": "*",
+                "esquerda": {
+                    "tipo": "numero",
+                    "valor": 300,
+                    "tipo_dado": "int",
+                    "linha": 16
+                },
+                "direita": {
+                    "tipo": "variavel",
+                    "nome": "UNIDADE_MS",
+                    "tipo_dado": null,
+                    "linha": 16
+                },
+                "linha": 16
+            },
+            "linha": 16
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "T_TRACO",
+                "tipo_dado": null,
+                "linha": 17
+            },
+            "val_expr": {
+                "tipo": "operacao",
+                "operador": "*",
+                "esquerda": {
+                    "tipo": "numero",
+                    "valor": 600,
+                    "tipo_dado": "int",
+                    "linha": 17
+                },
+                "direita": {
+                    "tipo": "variavel",
+                    "nome": "UNIDADE_MS",
+                    "tipo_dado": null,
+                    "linha": 17
+                },
+                "linha": 17
+            },
+            "linha": 17
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "T_GAPL",
+                "tipo_dado": null,
+                "linha": 18
+            },
+            "val_expr": {
+                "tipo": "operacao",
+                "operador": "*",
+                "esquerda": {
+                    "tipo": "numero",
+                    "valor": 450,
+                    "tipo_dado": "int",
+                    "linha": 18
+                },
+                "direita": {
+                    "tipo": "variavel",
+                    "nome": "UNIDADE_MS",
+                    "tipo_dado": null,
+                    "linha": 18
+                },
+                "linha": 18
+            },
+            "linha": 18
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "T_GAPP",
+                "tipo_dado": null,
+                "linha": 19
+            },
+            "val_expr": {
+                "tipo": "operacao",
+                "operador": "*",
+                "esquerda": {
+                    "tipo": "numero",
+                    "valor": 900,
+                    "tipo_dado": "int",
+                    "linha": 19
+                },
+                "direita": {
+                    "tipo": "variavel",
+                    "nome": "UNIDADE_MS",
+                    "tipo_dado": null,
+                    "linha": 19
+                },
+                "linha": 19
+            },
+            "linha": 19
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "T_GAPF",
+                "tipo_dado": null,
+                "linha": 20
+            },
+            "val_expr": {
+                "tipo": "operacao",
+                "operador": "*",
+                "esquerda": {
+                    "tipo": "numero",
+                    "valor": 2000,
+                    "tipo_dado": "int",
+                    "linha": 20
+                },
+                "direita": {
+                    "tipo": "variavel",
+                    "nome": "UNIDADE_MS",
+                    "tipo_dado": null,
+                    "linha": 20
+                },
+                "linha": 20
+            },
+            "linha": 20
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 23
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 1,
+                "tipo_dado": "int",
+                "linha": 23
+            },
+            "linha": 23
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 23
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_PONTO",
+                "tipo_dado": null,
+                "linha": 23
+            },
+            "linha": 23
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 23
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 23
+                },
+                "linha": 23
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 23
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 23
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 23
+                            },
+                            "linha": 23
+                        },
+                        "linha": 23
+                    }
+                ]
+            },
+            "linha": 23
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 24
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 0,
+                "tipo_dado": "int",
+                "linha": 24
+            },
+            "linha": 24
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 24
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_GAPL",
+                "tipo_dado": null,
+                "linha": 24
+            },
+            "linha": 24
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 24
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 24
+                },
+                "linha": 24
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 24
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 24
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 24
+                            },
+                            "linha": 24
+                        },
+                        "linha": 24
+                    }
+                ]
+            },
+            "linha": 24
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 26
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 1,
+                "tipo_dado": "int",
+                "linha": 26
+            },
+            "linha": 26
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 26
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_PONTO",
+                "tipo_dado": null,
+                "linha": 26
+            },
+            "linha": 26
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 26
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 26
+                },
+                "linha": 26
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 26
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 26
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 26
+                            },
+                            "linha": 26
+                        },
+                        "linha": 26
+                    }
+                ]
+            },
+            "linha": 26
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 27
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 0,
+                "tipo_dado": "int",
+                "linha": 27
+            },
+            "linha": 27
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 27
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_GAPL",
+                "tipo_dado": null,
+                "linha": 27
+            },
+            "linha": 27
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 27
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 27
+                },
+                "linha": 27
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 27
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 27
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 27
+                            },
+                            "linha": 27
+                        },
+                        "linha": 27
+                    }
+                ]
+            },
+            "linha": 27
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 29
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 1,
+                "tipo_dado": "int",
+                "linha": 29
+            },
+            "linha": 29
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 29
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_PONTO",
+                "tipo_dado": null,
+                "linha": 29
+            },
+            "linha": 29
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 29
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 29
+                },
+                "linha": 29
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 29
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 29
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 29
+                            },
+                            "linha": 29
+                        },
+                        "linha": 29
+                    }
+                ]
+            },
+            "linha": 29
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 30
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 0,
+                "tipo_dado": "int",
+                "linha": 30
+            },
+            "linha": 30
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 30
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_GAPL",
+                "tipo_dado": null,
+                "linha": 30
+            },
+            "linha": 30
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 30
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 30
+                },
+                "linha": 30
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 30
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 30
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 30
+                            },
+                            "linha": 30
+                        },
+                        "linha": 30
+                    }
+                ]
+            },
+            "linha": 30
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 32
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 1,
+                "tipo_dado": "int",
+                "linha": 32
+            },
+            "linha": 32
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 32
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_PONTO",
+                "tipo_dado": null,
+                "linha": 32
+            },
+            "linha": 32
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 32
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 32
+                },
+                "linha": 32
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 32
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 32
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 32
+                            },
+                            "linha": 32
+                        },
+                        "linha": 32
+                    }
+                ]
+            },
+            "linha": 32
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 33
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 0,
+                "tipo_dado": "int",
+                "linha": 33
+            },
+            "linha": 33
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 33
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_GAPP",
+                "tipo_dado": null,
+                "linha": 33
+            },
+            "linha": 33
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 33
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 33
+                },
+                "linha": 33
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 33
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 33
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 33
+                            },
+                            "linha": 33
+                        },
+                        "linha": 33
+                    }
+                ]
+            },
+            "linha": 33
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 36
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 1,
+                "tipo_dado": "int",
+                "linha": 36
+            },
+            "linha": 36
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 36
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_PONTO",
+                "tipo_dado": null,
+                "linha": 36
+            },
+            "linha": 36
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 36
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 36
+                },
+                "linha": 36
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 36
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 36
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 36
+                            },
+                            "linha": 36
+                        },
+                        "linha": 36
+                    }
+                ]
+            },
+            "linha": 36
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 37
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 0,
+                "tipo_dado": "int",
+                "linha": 37
+            },
+            "linha": 37
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 37
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_GAPL",
+                "tipo_dado": null,
+                "linha": 37
+            },
+            "linha": 37
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 37
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 37
+                },
+                "linha": 37
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 37
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 37
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 37
+                            },
+                            "linha": 37
+                        },
+                        "linha": 37
+                    }
+                ]
+            },
+            "linha": 37
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 39
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 1,
+                "tipo_dado": "int",
+                "linha": 39
+            },
+            "linha": 39
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 39
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_PONTO",
+                "tipo_dado": null,
+                "linha": 39
+            },
+            "linha": 39
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 39
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 39
+                },
+                "linha": 39
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 39
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 39
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 39
+                            },
+                            "linha": 39
+                        },
+                        "linha": 39
+                    }
+                ]
+            },
+            "linha": 39
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 40
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 0,
+                "tipo_dado": "int",
+                "linha": 40
+            },
+            "linha": 40
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 40
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_GAPP",
+                "tipo_dado": null,
+                "linha": 40
+            },
+            "linha": 40
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 40
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 40
+                },
+                "linha": 40
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 40
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 40
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 40
+                            },
+                            "linha": 40
+                        },
+                        "linha": 40
+                    }
+                ]
+            },
+            "linha": 40
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 43
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 1,
+                "tipo_dado": "int",
+                "linha": 43
+            },
+            "linha": 43
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 43
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_TRACO",
+                "tipo_dado": null,
+                "linha": 43
+            },
+            "linha": 43
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 43
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 43
+                },
+                "linha": 43
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 43
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 43
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 43
+                            },
+                            "linha": 43
+                        },
+                        "linha": 43
+                    }
+                ]
+            },
+            "linha": 43
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 44
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 0,
+                "tipo_dado": "int",
+                "linha": 44
+            },
+            "linha": 44
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 44
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_GAPL",
+                "tipo_dado": null,
+                "linha": 44
+            },
+            "linha": 44
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 44
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 44
+                },
+                "linha": 44
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 44
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 44
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 44
+                            },
+                            "linha": 44
+                        },
+                        "linha": 44
+                    }
+                ]
+            },
+            "linha": 44
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 46
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 1,
+                "tipo_dado": "int",
+                "linha": 46
+            },
+            "linha": 46
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 46
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_TRACO",
+                "tipo_dado": null,
+                "linha": 46
+            },
+            "linha": 46
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 46
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 46
+                },
+                "linha": 46
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 46
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 46
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 46
+                            },
+                            "linha": 46
+                        },
+                        "linha": 46
+                    }
+                ]
+            },
+            "linha": 46
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 47
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 0,
+                "tipo_dado": "int",
+                "linha": 47
+            },
+            "linha": 47
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 47
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_GAPL",
+                "tipo_dado": null,
+                "linha": 47
+            },
+            "linha": 47
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 47
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 47
+                },
+                "linha": 47
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 47
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 47
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 47
+                            },
+                            "linha": 47
+                        },
+                        "linha": 47
+                    }
+                ]
+            },
+            "linha": 47
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 49
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 1,
+                "tipo_dado": "int",
+                "linha": 49
+            },
+            "linha": 49
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 49
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_PONTO",
+                "tipo_dado": null,
+                "linha": 49
+            },
+            "linha": 49
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 49
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 49
+                },
+                "linha": 49
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 49
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 49
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 49
+                            },
+                            "linha": 49
+                        },
+                        "linha": 49
+                    }
+                ]
+            },
+            "linha": 49
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 50
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 0,
+                "tipo_dado": "int",
+                "linha": 50
+            },
+            "linha": 50
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 50
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_GAPP",
+                "tipo_dado": null,
+                "linha": 50
+            },
+            "linha": 50
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 50
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 50
+                },
+                "linha": 50
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 50
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 50
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 50
+                            },
+                            "linha": 50
+                        },
+                        "linha": 50
+                    }
+                ]
+            },
+            "linha": 50
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 53
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 1,
+                "tipo_dado": "int",
+                "linha": 53
+            },
+            "linha": 53
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 53
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_TRACO",
+                "tipo_dado": null,
+                "linha": 53
+            },
+            "linha": 53
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 53
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 53
+                },
+                "linha": 53
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 53
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 53
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 53
+                            },
+                            "linha": 53
+                        },
+                        "linha": 53
+                    }
+                ]
+            },
+            "linha": 53
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 54
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 0,
+                "tipo_dado": "int",
+                "linha": 54
+            },
+            "linha": 54
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 54
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_GAPL",
+                "tipo_dado": null,
+                "linha": 54
+            },
+            "linha": 54
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 54
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 54
+                },
+                "linha": 54
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 54
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 54
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 54
+                            },
+                            "linha": 54
+                        },
+                        "linha": 54
+                    }
+                ]
+            },
+            "linha": 54
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 56
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 1,
+                "tipo_dado": "int",
+                "linha": 56
+            },
+            "linha": 56
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 56
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_TRACO",
+                "tipo_dado": null,
+                "linha": 56
+            },
+            "linha": 56
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 56
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 56
+                },
+                "linha": 56
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 56
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 56
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 56
+                            },
+                            "linha": 56
+                        },
+                        "linha": 56
+                    }
+                ]
+            },
+            "linha": 56
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 57
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 0,
+                "tipo_dado": "int",
+                "linha": 57
+            },
+            "linha": 57
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 57
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_GAPL",
+                "tipo_dado": null,
+                "linha": 57
+            },
+            "linha": 57
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 57
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 57
+                },
+                "linha": 57
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 57
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 57
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 57
+                            },
+                            "linha": 57
+                        },
+                        "linha": 57
+                    }
+                ]
+            },
+            "linha": 57
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 59
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 1,
+                "tipo_dado": "int",
+                "linha": 59
+            },
+            "linha": 59
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 59
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_TRACO",
+                "tipo_dado": null,
+                "linha": 59
+            },
+            "linha": 59
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 59
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 59
+                },
+                "linha": 59
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 59
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 59
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 59
+                            },
+                            "linha": 59
+                        },
+                        "linha": 59
+                    }
+                ]
+            },
+            "linha": 59
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 60
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 0,
+                "tipo_dado": "int",
+                "linha": 60
+            },
+            "linha": 60
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 60
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_GAPP",
+                "tipo_dado": null,
+                "linha": 60
+            },
+            "linha": 60
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 60
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 60
+                },
+                "linha": 60
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 60
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 60
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 60
+                            },
+                            "linha": 60
+                        },
+                        "linha": 60
+                    }
+                ]
+            },
+            "linha": 60
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 63
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 1,
+                "tipo_dado": "int",
+                "linha": 63
+            },
+            "linha": 63
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 63
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_PONTO",
+                "tipo_dado": null,
+                "linha": 63
+            },
+            "linha": 63
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 63
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 63
+                },
+                "linha": 63
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 63
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 63
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 63
+                            },
+                            "linha": 63
+                        },
+                        "linha": 63
+                    }
+                ]
+            },
+            "linha": 63
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 64
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 0,
+                "tipo_dado": "int",
+                "linha": 64
+            },
+            "linha": 64
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 64
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_GAPL",
+                "tipo_dado": null,
+                "linha": 64
+            },
+            "linha": 64
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 64
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 64
+                },
+                "linha": 64
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 64
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 64
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 64
+                            },
+                            "linha": 64
+                        },
+                        "linha": 64
+                    }
+                ]
+            },
+            "linha": 64
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 66
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 1,
+                "tipo_dado": "int",
+                "linha": 66
+            },
+            "linha": 66
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 66
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_TRACO",
+                "tipo_dado": null,
+                "linha": 66
+            },
+            "linha": 66
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 66
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 66
+                },
+                "linha": 66
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 66
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 66
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 66
+                            },
+                            "linha": 66
+                        },
+                        "linha": 66
+                    }
+                ]
+            },
+            "linha": 66
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 67
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 0,
+                "tipo_dado": "int",
+                "linha": 67
+            },
+            "linha": 67
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 67
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_GAPL",
+                "tipo_dado": null,
+                "linha": 67
+            },
+            "linha": 67
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 67
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 67
+                },
+                "linha": 67
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 67
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 67
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 67
+                            },
+                            "linha": 67
+                        },
+                        "linha": 67
+                    }
+                ]
+            },
+            "linha": 67
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 69
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 1,
+                "tipo_dado": "int",
+                "linha": 69
+            },
+            "linha": 69
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 69
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_PONTO",
+                "tipo_dado": null,
+                "linha": 69
+            },
+            "linha": 69
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 69
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 69
+                },
+                "linha": 69
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 69
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 69
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 69
+                            },
+                            "linha": 69
+                        },
+                        "linha": 69
+                    }
+                ]
+            },
+            "linha": 69
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 70
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 0,
+                "tipo_dado": "int",
+                "linha": 70
+            },
+            "linha": 70
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 70
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_GAPF",
+                "tipo_dado": null,
+                "linha": 70
+            },
+            "linha": 70
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 70
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 70
+                },
+                "linha": 70
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 70
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 70
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 70
+                            },
+                            "linha": 70
+                        },
+                        "linha": 70
+                    }
+                ]
+            },
+            "linha": 70
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 73
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 1,
+                "tipo_dado": "int",
+                "linha": 73
+            },
+            "linha": 73
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 73
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_PONTO",
+                "tipo_dado": null,
+                "linha": 73
+            },
+            "linha": 73
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 73
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 73
+                },
+                "linha": 73
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 73
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 73
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 73
+                            },
+                            "linha": 73
+                        },
+                        "linha": 73
+                    }
+                ]
+            },
+            "linha": 73
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 74
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 0,
+                "tipo_dado": "int",
+                "linha": 74
+            },
+            "linha": 74
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 74
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_GAPL",
+                "tipo_dado": null,
+                "linha": 74
+            },
+            "linha": 74
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 74
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 74
+                },
+                "linha": 74
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 74
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 74
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 74
+                            },
+                            "linha": 74
+                        },
+                        "linha": 74
+                    }
+                ]
+            },
+            "linha": 74
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 76
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 1,
+                "tipo_dado": "int",
+                "linha": 76
+            },
+            "linha": 76
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 76
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_TRACO",
+                "tipo_dado": null,
+                "linha": 76
+            },
+            "linha": 76
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 76
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 76
+                },
+                "linha": 76
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 76
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 76
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 76
+                            },
+                            "linha": 76
+                        },
+                        "linha": 76
+                    }
+                ]
+            },
+            "linha": 76
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 77
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 0,
+                "tipo_dado": "int",
+                "linha": 77
+            },
+            "linha": 77
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 77
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_GAPP",
+                "tipo_dado": null,
+                "linha": 77
+            },
+            "linha": 77
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 77
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 77
+                },
+                "linha": 77
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 77
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 77
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 77
+                            },
+                            "linha": 77
+                        },
+                        "linha": 77
+                    }
+                ]
+            },
+            "linha": 77
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 80
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 1,
+                "tipo_dado": "int",
+                "linha": 80
+            },
+            "linha": 80
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 80
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_TRACO",
+                "tipo_dado": null,
+                "linha": 80
+            },
+            "linha": 80
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 80
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 80
+                },
+                "linha": 80
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 80
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 80
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 80
+                            },
+                            "linha": 80
+                        },
+                        "linha": 80
+                    }
+                ]
+            },
+            "linha": 80
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 81
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 0,
+                "tipo_dado": "int",
+                "linha": 81
+            },
+            "linha": 81
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 81
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_GAPL",
+                "tipo_dado": null,
+                "linha": 81
+            },
+            "linha": 81
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 81
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 81
+                },
+                "linha": 81
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 81
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 81
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 81
+                            },
+                            "linha": 81
+                        },
+                        "linha": 81
+                    }
+                ]
+            },
+            "linha": 81
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 83
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 1,
+                "tipo_dado": "int",
+                "linha": 83
+            },
+            "linha": 83
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 83
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_TRACO",
+                "tipo_dado": null,
+                "linha": 83
+            },
+            "linha": 83
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 83
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 83
+                },
+                "linha": 83
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 83
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 83
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 83
+                            },
+                            "linha": 83
+                        },
+                        "linha": 83
+                    }
+                ]
+            },
+            "linha": 83
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 84
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 0,
+                "tipo_dado": "int",
+                "linha": 84
+            },
+            "linha": 84
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 84
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_GAPL",
+                "tipo_dado": null,
+                "linha": 84
+            },
+            "linha": 84
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 84
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 84
+                },
+                "linha": 84
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 84
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 84
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 84
+                            },
+                            "linha": 84
+                        },
+                        "linha": 84
+                    }
+                ]
+            },
+            "linha": 84
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 86
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 1,
+                "tipo_dado": "int",
+                "linha": 86
+            },
+            "linha": 86
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 86
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_PONTO",
+                "tipo_dado": null,
+                "linha": 86
+            },
+            "linha": 86
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 86
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 86
+                },
+                "linha": 86
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 86
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 86
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 86
+                            },
+                            "linha": 86
+                        },
+                        "linha": 86
+                    }
+                ]
+            },
+            "linha": 86
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 87
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 0,
+                "tipo_dado": "int",
+                "linha": 87
+            },
+            "linha": 87
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 87
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_GAPL",
+                "tipo_dado": null,
+                "linha": 87
+            },
+            "linha": 87
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 87
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 87
+                },
+                "linha": 87
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 87
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 87
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 87
+                            },
+                            "linha": 87
+                        },
+                        "linha": 87
+                    }
+                ]
+            },
+            "linha": 87
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 89
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 1,
+                "tipo_dado": "int",
+                "linha": 89
+            },
+            "linha": 89
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 89
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_PONTO",
+                "tipo_dado": null,
+                "linha": 89
+            },
+            "linha": 89
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 89
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 89
+                },
+                "linha": 89
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 89
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 89
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 89
+                            },
+                            "linha": 89
+                        },
+                        "linha": 89
+                    }
+                ]
+            },
+            "linha": 89
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 90
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 0,
+                "tipo_dado": "int",
+                "linha": 90
+            },
+            "linha": 90
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 90
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_GAPP",
+                "tipo_dado": null,
+                "linha": 90
+            },
+            "linha": 90
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 90
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 90
+                },
+                "linha": 90
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 90
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 90
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 90
+                            },
+                            "linha": 90
+                        },
+                        "linha": 90
+                    }
+                ]
+            },
+            "linha": 90
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 93
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 1,
+                "tipo_dado": "int",
+                "linha": 93
+            },
+            "linha": 93
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 93
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_PONTO",
+                "tipo_dado": null,
+                "linha": 93
+            },
+            "linha": 93
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 93
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 93
+                },
+                "linha": 93
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 93
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 93
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 93
+                            },
+                            "linha": 93
+                        },
+                        "linha": 93
+                    }
+                ]
+            },
+            "linha": 93
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 94
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 0,
+                "tipo_dado": "int",
+                "linha": 94
+            },
+            "linha": 94
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 94
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_GAPP",
+                "tipo_dado": null,
+                "linha": 94
+            },
+            "linha": 94
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 94
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 94
+                },
+                "linha": 94
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 94
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 94
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 94
+                            },
+                            "linha": 94
+                        },
+                        "linha": 94
+                    }
+                ]
+            },
+            "linha": 94
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 97
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 1,
+                "tipo_dado": "int",
+                "linha": 97
+            },
+            "linha": 97
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 97
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_PONTO",
+                "tipo_dado": null,
+                "linha": 97
+            },
+            "linha": 97
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 97
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 97
+                },
+                "linha": 97
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 97
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 97
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 97
+                            },
+                            "linha": 97
+                        },
+                        "linha": 97
+                    }
+                ]
+            },
+            "linha": 97
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 98
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 0,
+                "tipo_dado": "int",
+                "linha": 98
+            },
+            "linha": 98
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 98
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_GAPL",
+                "tipo_dado": null,
+                "linha": 98
+            },
+            "linha": 98
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 98
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 98
+                },
+                "linha": 98
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 98
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 98
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 98
+                            },
+                            "linha": 98
+                        },
+                        "linha": 98
+                    }
+                ]
+            },
+            "linha": 98
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 100
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 1,
+                "tipo_dado": "int",
+                "linha": 100
+            },
+            "linha": 100
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 100
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_PONTO",
+                "tipo_dado": null,
+                "linha": 100
+            },
+            "linha": 100
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 100
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 100
+                },
+                "linha": 100
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 100
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 100
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 100
+                            },
+                            "linha": 100
+                        },
+                        "linha": 100
+                    }
+                ]
+            },
+            "linha": 100
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 101
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 0,
+                "tipo_dado": "int",
+                "linha": 101
+            },
+            "linha": 101
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 101
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_GAPL",
+                "tipo_dado": null,
+                "linha": 101
+            },
+            "linha": 101
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 101
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 101
+                },
+                "linha": 101
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 101
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 101
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 101
+                            },
+                            "linha": 101
+                        },
+                        "linha": 101
+                    }
+                ]
+            },
+            "linha": 101
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 103
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 1,
+                "tipo_dado": "int",
+                "linha": 103
+            },
+            "linha": 103
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 103
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_PONTO",
+                "tipo_dado": null,
+                "linha": 103
+            },
+            "linha": 103
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 103
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 103
+                },
+                "linha": 103
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 103
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 103
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 103
+                            },
+                            "linha": 103
+                        },
+                        "linha": 103
+                    }
+                ]
+            },
+            "linha": 103
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 104
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 0,
+                "tipo_dado": "int",
+                "linha": 104
+            },
+            "linha": 104
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 104
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_GAPL",
+                "tipo_dado": null,
+                "linha": 104
+            },
+            "linha": 104
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 104
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 104
+                },
+                "linha": 104
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 104
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 104
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 104
+                            },
+                            "linha": 104
+                        },
+                        "linha": 104
+                    }
+                ]
+            },
+            "linha": 104
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 106
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 1,
+                "tipo_dado": "int",
+                "linha": 106
+            },
+            "linha": 106
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 106
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_TRACO",
+                "tipo_dado": null,
+                "linha": 106
+            },
+            "linha": 106
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 106
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 106
+                },
+                "linha": 106
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 106
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 106
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 106
+                            },
+                            "linha": 106
+                        },
+                        "linha": 106
+                    }
+                ]
+            },
+            "linha": 106
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 107
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 0,
+                "tipo_dado": "int",
+                "linha": 107
+            },
+            "linha": 107
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 107
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_GAPP",
+                "tipo_dado": null,
+                "linha": 107
+            },
+            "linha": 107
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 107
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 107
+                },
+                "linha": 107
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 107
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 107
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 107
+                            },
+                            "linha": 107
+                        },
+                        "linha": 107
+                    }
+                ]
+            },
+            "linha": 107
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 110
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 1,
+                "tipo_dado": "int",
+                "linha": 110
+            },
+            "linha": 110
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 110
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_PONTO",
+                "tipo_dado": null,
+                "linha": 110
+            },
+            "linha": 110
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 110
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 110
+                },
+                "linha": 110
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 110
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 110
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 110
+                            },
+                            "linha": 110
+                        },
+                        "linha": 110
+                    }
+                ]
+            },
+            "linha": 110
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 111
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 0,
+                "tipo_dado": "int",
+                "linha": 111
+            },
+            "linha": 111
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 111
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_GAPP",
+                "tipo_dado": null,
+                "linha": 111
+            },
+            "linha": 111
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 111
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 111
+                },
+                "linha": 111
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 111
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 111
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 111
+                            },
+                            "linha": 111
+                        },
+                        "linha": 111
+                    }
+                ]
+            },
+            "linha": 111
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 114
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 1,
+                "tipo_dado": "int",
+                "linha": 114
+            },
+            "linha": 114
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 114
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_TRACO",
+                "tipo_dado": null,
+                "linha": 114
+            },
+            "linha": 114
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 114
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 114
+                },
+                "linha": 114
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 114
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 114
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 114
+                            },
+                            "linha": 114
+                        },
+                        "linha": 114
+                    }
+                ]
+            },
+            "linha": 114
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 115
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 0,
+                "tipo_dado": "int",
+                "linha": 115
+            },
+            "linha": 115
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 115
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_GAPL",
+                "tipo_dado": null,
+                "linha": 115
+            },
+            "linha": 115
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 115
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 115
+                },
+                "linha": 115
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 115
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 115
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 115
+                            },
+                            "linha": 115
+                        },
+                        "linha": 115
+                    }
+                ]
+            },
+            "linha": 115
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 117
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 1,
+                "tipo_dado": "int",
+                "linha": 117
+            },
+            "linha": 117
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 117
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_PONTO",
+                "tipo_dado": null,
+                "linha": 117
+            },
+            "linha": 117
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 117
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 117
+                },
+                "linha": 117
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 117
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 117
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 117
+                            },
+                            "linha": 117
+                        },
+                        "linha": 117
+                    }
+                ]
+            },
+            "linha": 117
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 118
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 0,
+                "tipo_dado": "int",
+                "linha": 118
+            },
+            "linha": 118
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 118
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_GAPL",
+                "tipo_dado": null,
+                "linha": 118
+            },
+            "linha": 118
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 118
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 118
+                },
+                "linha": 118
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 118
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 118
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 118
+                            },
+                            "linha": 118
+                        },
+                        "linha": 118
+                    }
+                ]
+            },
+            "linha": 118
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 120
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 1,
+                "tipo_dado": "int",
+                "linha": 120
+            },
+            "linha": 120
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 120
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_PONTO",
+                "tipo_dado": null,
+                "linha": 120
+            },
+            "linha": 120
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 120
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 120
+                },
+                "linha": 120
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 120
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 120
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 120
+                            },
+                            "linha": 120
+                        },
+                        "linha": 120
+                    }
+                ]
+            },
+            "linha": 120
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 121
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 0,
+                "tipo_dado": "int",
+                "linha": 121
+            },
+            "linha": 121
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 121
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_GAPP",
+                "tipo_dado": null,
+                "linha": 121
+            },
+            "linha": 121
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 121
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 121
+                },
+                "linha": 121
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 121
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 121
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 121
+                            },
+                            "linha": 121
+                        },
+                        "linha": 121
+                    }
+                ]
+            },
+            "linha": 121
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 124
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 1,
+                "tipo_dado": "int",
+                "linha": 124
+            },
+            "linha": 124
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 124
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_TRACO",
+                "tipo_dado": null,
+                "linha": 124
+            },
+            "linha": 124
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 124
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 124
+                },
+                "linha": 124
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 124
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 124
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 124
+                            },
+                            "linha": 124
+                        },
+                        "linha": 124
+                    }
+                ]
+            },
+            "linha": 124
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 125
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 0,
+                "tipo_dado": "int",
+                "linha": 125
+            },
+            "linha": 125
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 125
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_GAPL",
+                "tipo_dado": null,
+                "linha": 125
+            },
+            "linha": 125
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 125
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 125
+                },
+                "linha": 125
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 125
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 125
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 125
+                            },
+                            "linha": 125
+                        },
+                        "linha": 125
+                    }
+                ]
+            },
+            "linha": 125
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 127
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 1,
+                "tipo_dado": "int",
+                "linha": 127
+            },
+            "linha": 127
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 127
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_TRACO",
+                "tipo_dado": null,
+                "linha": 127
+            },
+            "linha": 127
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 127
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 127
+                },
+                "linha": 127
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 127
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 127
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 127
+                            },
+                            "linha": 127
+                        },
+                        "linha": 127
+                    }
+                ]
+            },
+            "linha": 127
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 128
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 0,
+                "tipo_dado": "int",
+                "linha": 128
+            },
+            "linha": 128
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 128
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_GAPL",
+                "tipo_dado": null,
+                "linha": 128
+            },
+            "linha": 128
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 128
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 128
+                },
+                "linha": 128
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 128
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 128
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 128
+                            },
+                            "linha": 128
+                        },
+                        "linha": 128
+                    }
+                ]
+            },
+            "linha": 128
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 130
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 1,
+                "tipo_dado": "int",
+                "linha": 130
+            },
+            "linha": 130
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "CNT",
+                "tipo_dado": null,
+                "linha": 130
+            },
+            "val_expr": {
+                "tipo": "variavel",
+                "nome": "T_TRACO",
+                "tipo_dado": null,
+                "linha": 130
+            },
+            "linha": 130
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "WHILE",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "CNT",
+                    "tipo_dado": null,
+                    "linha": 130
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0,
+                    "tipo_dado": "int",
+                    "linha": 130
+                },
+                "linha": 130
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "comando",
+                        "comando": "MEM",
+                        "nome_var": {
+                            "tipo": "variavel",
+                            "nome": "CNT",
+                            "tipo_dado": null,
+                            "linha": 130
+                        },
+                        "val_expr": {
+                            "tipo": "operacao",
+                            "operador": "-",
+                            "esquerda": {
+                                "tipo": "variavel",
+                                "nome": "CNT",
+                                "tipo_dado": null,
+                                "linha": 130
+                            },
+                            "direita": {
+                                "tipo": "numero",
+                                "valor": 1,
+                                "tipo_dado": "int",
+                                "linha": 130
+                            },
+                            "linha": 130
+                        },
+                        "linha": 130
+                    }
+                ]
+            },
+            "linha": 130
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "nome_var": {
+                "tipo": "variavel",
+                "nome": "LEDR",
+                "tipo_dado": null,
+                "linha": 131
+            },
+            "val_expr": {
+                "tipo": "numero",
+                "valor": 0,
+                "tipo_dado": "int",
+                "linha": 131
+            },
+            "linha": 131
+        }
+    ]
+}
