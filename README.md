@@ -7,7 +7,7 @@ Compilador completo para uma linguagem de programação em **notação polonesa 
 ## Autor
 
 **Higor Leonardo da Silva Azevedo** — `higorazevedo04`  
-Grupo no Canvas: **RA4_5**
+Grupo no Canvas: **RA4**
 
 ---
 
